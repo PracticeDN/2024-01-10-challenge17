@@ -1,0 +1,274 @@
+html,
+body {
+  font-size: 62.5%;
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  transition: width 0.3s ease, font-size 0.3s ease;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 8rem;
+  background-color: white;
+}
+.header .inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 1200px) {
+  .header .inner {
+    width: 118rem;
+  }
+}
+.header .inner .logo {
+  color: #82694b;
+  cursor: pointer;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.header .inner .nav-bar {
+  margin-left: 4rem;
+  display: none;
+}
+@media (min-width: 1050px) {
+  .header .inner .nav-bar {
+    display: block;
+  }
+}
+.header .inner .nav-bar ul {
+  display: flex;
+  gap: 4rem;
+}
+.header .inner .nav-bar ul li {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.header .inner .nav-bar ul li:nth-child(3) {
+  color: #82694b;
+}
+.header .inner .header-form {
+  display: none;
+  margin-left: auto;
+}
+@media (min-width: 1050px) {
+  .header .inner .header-form {
+    display: flex;
+  }
+}
+.header .inner .header-form input {
+  border: none;
+  background-color: #ebebeb;
+  padding: 0.8rem;
+  width: 20rem;
+  height: 3rem;
+  outline: none;
+}
+.header .inner .header-form input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+.header .inner .header-form button {
+  background-color: white;
+  height: 3rem;
+  border: 1px solid #c2c2c2;
+  font-weight: 600;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+.header .inner .menu {
+  margin-left: auto;
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+}
+@media (min-width: 1050px) {
+  .header .inner .menu {
+    display: none;
+  }
+}
+.main .banner {
+  width: 100%;
+  height: 30rem;
+  background-color: #a1835f;
+}
+.main .banner .banner-contents {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+@media (min-width: 1050px) {
+  .main .banner .banner-contents {
+    width: 85rem;
+  }
+}
+.main .banner .banner-contents h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.main .banner .banner-contents p {
+  font-size: 1.8rem;
+}
+.main .main-contents {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+@media (min-width: 1050px) {
+  .main .main-contents {
+    width: 85rem;
+  }
+}
+.main .main-contents .main-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.main .main-contents .main-contents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 1050px) {
+  .main .main-contents .main-contents-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.main .main-contents .main-content {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+.main .main-contents .main-content .main-content-image {
+  width: 40%;
+  padding-top: 40%;
+  background-color: #82694b;
+}
+.main .main-contents .main-content .infos {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main .main-contents .main-content .infos h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.main .main-contents .main-content .infos .company {
+  font-size: 1.8rem;
+  color: #c2c2c2;
+}
+.main .main-contents .main-content .infos .pay {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+@media (min-width: 1050px) {
+  .main .main-contents .main-content .infos .pay {
+    margin-top: auto;
+  }
+}
+.main .main-contents .job-announcement {
+  width: 100%;
+  height: 8rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: rgb(230, 245, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .main-contents .job-announcement h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.main .main-contents .job-announcement button {
+  cursor: pointer;
+  background-color: #82694b;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 4rem;
+  border-top: 1px solid #c2c2c2;
+}
+.footer .inner {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+@media (min-width: 1050px) {
+  .footer .inner {
+    width: 85rem;
+    flex-direction: row;
+  }
+}
+.footer .inner .links {
+  display: flex;
+  gap: 4rem;
+}
+.footer .inner .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #aaaaaa;
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  .footer .inner .links ul {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .inner .links ul {
+    font-size: 1.6rem;
+  }
+}
+.footer .inner .links ul li {
+  cursor: pointer;
+}
+.footer .inner .button-container p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .footer .inner .button-container p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .inner .button-container p {
+    font-size: 1.6rem;
+  }
+}
+.footer .inner .button-container .buttons {
+  display: flex;
+  gap: 1rem;
+}
+.footer .inner .button-container .buttons button {
+  width: 10rem;
+  padding: 1rem;
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
